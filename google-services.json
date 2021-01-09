@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "660712216768",
+    "project_id": "original-seeker-286716",
+    "storage_bucket": "original-seeker-286716.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:660712216768:android:208dfe1b2796991dfdf525",
+        "android_client_info": {
+          "package_name": "com.netsave"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "660712216768-k9fkaapr7d1heqgupq0igk755sirheb9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDJ9Y_6kwG0pJnc4nnkfPSELDJarrgv-Hw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "660712216768-dl06dc85u0pa80gi4r4loamlo4157t9u.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "660712216768-5v8ibfd6fob1nkirrs7g1l97rfutvbr4.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "org.reactjs.native.example.NetSave"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

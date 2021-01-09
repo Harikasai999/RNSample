@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">NetSave</string>
+   <string name="facebook_app_id">233233341662533</string>
+<string name="fb_login_protocol_scheme">fb233233341662533</string>
+<!-- <string name="facebook_app_id">414291956357651</string>
+<string name="fb_login_protocol_scheme">fb414291956357651</string> -->
 </resources>

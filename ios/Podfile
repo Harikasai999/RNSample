@@ -10,6 +10,7 @@ target 'NetSave' do
 
   pod 'react-native-appearance', :path => '../node_modules/react-native-appearance'
 
+  pod 'RNVectorIcons', :path => '../node_modules/react-native-vector-icons'
   target 'NetSaveTests' do
     inherit! :complete
     # Pods for testing
