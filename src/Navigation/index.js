@@ -4,7 +4,7 @@ import { View, Text, Button, StatusBar, SafeAreaView } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import { createDrawerNavigator } from '@react-navigation/drawer';
-import { Login, Home, ChatList } from "@containers";
+import { Login, Home, ChatList, Products } from "@containers";
 import { SideBar } from "@components";
 import { UserContext } from "@context/user-context";
 import { ThemeContext } from '@context/theme-context';

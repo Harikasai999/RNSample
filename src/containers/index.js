@@ -7,3 +7,5 @@ export { default as Feed } from './Tabs/Feed';
 export { default as Profile } from './Tabs/Profile';
 export { default as Settings } from './Tabs/Settings';
 export { default as LoginWithFacebook } from './Tabs/LoginWithFacebook';
+export { default as Products } from './Tabs/Products';
+export { default as CartScreen } from './Tabs/CartScreen';

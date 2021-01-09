@@ -14,7 +14,7 @@ import {
     createBottomTabNavigator
 } from '@react-navigation/bottom-tabs';
 
-import { Details, Feed, Profile, Settings } from "@containers";
+import { Details, Feed, Profile, Settings, Products, CartScreen } from "@containers";
 
 const Stack = createStackNavigator();
 const Tab = createBottomTabNavigator();
@@ -94,6 +94,32 @@ function BottomTab() {
                         tabBarIcon: ({ color, size }) => (
                             <MaterialCommunityIcons
                                 name="account"
+                                color={color}
+                                size={size}
+                            />
+                        ),
+                    }} />
+                <Tab.Screen
+                    name="Products"
+                    component={Products}
+                    options={{
+                        tabBarLabel: 'Products',
+                        tabBarIcon: ({ color, size }) => (
+                            <MaterialCommunityIcons
+                                name="view-list"
+                                color={color}
+                                size={size}
+                            />
+                        ),
+                    }} />
+                <Tab.Screen
+                    name="Cart"
+                    component={CartScreen}
+                    options={{
+                        tabBarLabel: 'Cart',
+                        tabBarIcon: ({ color, size }) => (
+                            <MaterialCommunityIcons
+                                name="cart"
                                 color={color}
                                 size={size}
                             />

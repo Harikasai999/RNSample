@@ -23,7 +23,11 @@ import BottomTab from "./src/Navigation/BottomTab";
 import { LoginWithFacebook } from "@containers";
 import { ThemeContext } from './theme-context'
 import Main from "./Main";
+import configureStore from "./src/redux/configureStore"; // store
+const { persistor, store } = configureStore(); // store
 import { GoogleSignin, statusCodes } from '@react-native-community/google-signin';
+import { Provider } from "react-redux"; //redux
+import { PersistGate } from 'redux-persist/es/integration/react' //redux
 function App() {
   useEffect(() => {
 
@@ -36,9 +40,15 @@ function App() {
     })
   }, [])
   return (
-    <ThemeProvider>
-      <LoginWithFacebook />
-    </ThemeProvider>
+    <SafeAreaView style={styles.container}>
+      <ThemeProvider>
+        <Provider store={store}>
+          <PersistGate persistor={persistor}>
+            <BottomTab />
+          </PersistGate>
+        </Provider>
+      </ThemeProvider>
+    </SafeAreaView>
   );
 };
 
