@@ -86,7 +86,8 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'center',
         marginTop: 10,
-        borderRadius: 10
+        borderRadius: 10,
+        alignSelf: 'flex-end'
     },
     buttonTxt: {
         fontSize: 16,

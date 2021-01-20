@@ -9,3 +9,4 @@ export { default as Settings } from './Tabs/Settings';
 export { default as LoginWithFacebook } from './Tabs/LoginWithFacebook';
 export { default as Products } from './Tabs/Products';
 export { default as CartScreen } from './Tabs/CartScreen';
+export { default as SlidingUpPanel } from './Tabs/SlidingUpPanel';

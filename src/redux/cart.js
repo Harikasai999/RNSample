@@ -8,6 +8,7 @@ const types = {
 
 export const actions = {
     addToCart: (dispatch, product) => {
+
         dispatch({
             type: types.ADD_TO_CART,
             product,

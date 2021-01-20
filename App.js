@@ -15,12 +15,13 @@ import {
   Text,
   StatusBar,
   Button,
-  TouchableOpacity
+  TouchableOpacity,
+  LogBox,
 } from 'react-native';
 import { ThemeProvider } from '@context/theme-context'
 import Navigation from "@Navigation";
 import BottomTab from "./src/Navigation/BottomTab";
-import { LoginWithFacebook } from "@containers";
+import { LoginWithFacebook, SlidingUpPanel } from "@containers";
 import { ThemeContext } from './theme-context'
 import Main from "./Main";
 import configureStore from "./src/redux/configureStore"; // store
@@ -28,6 +29,10 @@ const { persistor, store } = configureStore(); // store
 import { GoogleSignin, statusCodes } from '@react-native-community/google-signin';
 import { Provider } from "react-redux"; //redux
 import { PersistGate } from 'redux-persist/es/integration/react' //redux
+
+
+LogBox.ignoreLogs(['Warning: ...']); // Ignore log notification by message
+LogBox.ignoreAllLogs();//Ignore all log notifications
 function App() {
   useEffect(() => {
 
@@ -44,7 +49,7 @@ function App() {
       <ThemeProvider>
         <Provider store={store}>
           <PersistGate persistor={persistor}>
-            <BottomTab />
+            <SlidingUpPanel />
           </PersistGate>
         </Provider>
       </ThemeProvider>
